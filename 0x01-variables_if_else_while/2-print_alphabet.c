@@ -13,17 +13,17 @@ int main(void)
 	for( int i=0;i<Str.length;i++){
 		#include < stdio.h >
 */
-int main()
+int main(void)
 {
-    char ch = 'a';
+char ch = 'a';
 
-    printf("Lowercase English Alphabets:\n");
-    while(ch <= 'z')
-    {
-        printf("%c", ch);
-        ch++;
-    }
-    printf("\n");
+printf("Lowercase English Alphabets:\n");
+while(ch <= 'z')
+{
+printf("%c", ch);
+ch++;
+}
+printf("\n");
 
-    return 0;
+return 0;
 }
