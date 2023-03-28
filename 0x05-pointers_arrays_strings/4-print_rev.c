@@ -11,6 +11,8 @@ void print_rev(char *s)
 
 	while (s[i++])
 		c++;
+        
+	i = c;
 
 	while (i > 0)
 	{
