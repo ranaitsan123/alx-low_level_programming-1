@@ -13,4 +13,3 @@ void print_rev(char *s);
 
 void rev_string(char *s);
 
-0x05-pointers_arrays_strings
