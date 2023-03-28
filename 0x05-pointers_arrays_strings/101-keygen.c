@@ -1,46 +1,32 @@
-#include"main.h"
-#include "2-strlen.c"
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
- * _atoi - converts string to integer
- * @s: string to convert
+ * main - random password generator for 101-crackme
  *
- * Return: returns integer value
+ * Return: always 0
  */
-int _atoi(char *s)
+int main(void)
 {
-	int i;
-	int np = 0;
-	int c;
-	int d = 1;
-	int num = 0;
+char a[100];
+	int r, n, i;
 
-	for (i = 0; i < _strlen(s); i++)
+	n = 0;
+	i = 0;
+	srand(time(NULL));
+	while (n < 2645)
 	{
-		if (!(s[i] >= '0' && s[i] <= '9') && c > 0)
-			break;
-		if (s[i] == '-')
-			np--;
-		if (s[i] == '+')
-			np++;
-		if (s[i] >= '0' && s[i] <= '9')
+		r = rand() % 122;
+		if (r > 32)
 		{
-			c++;
+			a[i++] = r;
+			n += r;
 		}
 	}
-	while (c > 0)
-	{
-		num += ((s[i - 1] - '0') * d);
-		i--;
-		c--;
-		d *= 10;
-	}
-	if (np >= 0)
-	{
-		num *= 1;
-	} else
-	{
-		num *= -1;
-	}
-	return (num);
+	a[i++] = (2772 - n);
+	a[i] = '\0';
+	printf("%s", a);
+
+	return (0);
 }
