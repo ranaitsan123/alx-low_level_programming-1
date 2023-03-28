@@ -9,9 +9,8 @@
 
 int _strlen(char *str)
 {
-	int c = 0, i = 0;
-char *p = str;
-while(p+i){	
+int c = 0, i = 0
+while(str[i]){	
 c++;	
 i++;
 }	
