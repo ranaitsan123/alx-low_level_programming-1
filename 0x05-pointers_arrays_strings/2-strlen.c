@@ -10,7 +10,8 @@
 int _strlen(char *str)
 {
 int c = 0, i = 0;
-while(str[i]){	
+while(str[i])
+{	
 c++;	
 i++;
 }	
