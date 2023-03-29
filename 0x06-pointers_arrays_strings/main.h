@@ -4,4 +4,4 @@ char *_strncat(char *dest, char *src, int n);
 
 char *_strncpy(char *dest, char *src, int n);
 
-0x06-pointers_arrays_strings
+int _strcmp(char *s1, char *s2);
